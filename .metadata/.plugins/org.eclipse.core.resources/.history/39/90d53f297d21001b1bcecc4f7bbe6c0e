@@ -1,0 +1,54 @@
+package quiz;
+
+import java.util.Scanner;
+
+public class QuUpDownGame {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		int count =0;
+		
+		while(true) {
+			if(count<7) {
+				int com = (int) ((Math.random()*100)+1);
+				System.out.print("입력:");
+				int user = sc.nextInt();
+				
+				if(user>com) {
+					System.out.println("높습니다.");
+				}
+				else if(user<com) {
+					System.out.println("낮습니다.");
+				}
+				else if(user==com) {
+					System.out.println("성공입니다.");
+					break;
+				}
+				count++;
+			}
+			if(count>=7) {				
+				int restart;
+				while(true) {
+					System.out.print("게임재시작(1), 종료(0):");
+					restart = sc.nextInt();
+					if(restart==0 || restart==1) {
+						//정상입력이면 루프탈출
+						break;
+					}
+					else {
+						System.out.println("잘못입력해씸ㅜㅜ\n");
+					}
+				}								
+				if(restart==0) {
+					//게임종료를 위해 while루프 탈출
+					break;
+				}
+				else {
+					System.out.println("게임 재시작^^");
+					count=0;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration01.html</title>
+    <style>
+        #reg {
+            background-color: white;
+            border:1px solid gray;
+        }
+        tr th{
+            text-align: left;
+        }
+        tr th:first-child{
+            text-align: right;
+            color: red;
+        }
+        #double{
+            background-color: #343434;
+            color: white;
+            padding: 10px 40px 10px;
+            border-radius: 5px;
+        }
+        td{
+            text-align: left;
+            color: #8A8D86;
+        }
+ 
+    </style>
+</head>
+<body>
+    <p>*필수입력사항</p>
+    <table id="reg">
+        <tr>
+            <th>*</th>
+            <th>아이디</th>
+            <td><input type="text" name="id"></td>
+            <td><input type="button" value="중복확인" id="double"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td colspan="4">※ 3~15자의 영문과 숫자만 가능합니다.</td>
+        </tr>
+        <tr>
+            <th>*</th>
+            <th>비밀번호</th>
+            <td><input type="text" name="pw"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td colspan="4">※ 영문/숫자/특수문자 조합 6~20자 이상 입력해주세요.
+                (아이디/전화번호사용 불가)</td>
+        </tr>
+        <tr> 
+        <td></td>   
+        <td colspan="4">※ 1234** 비밀번호는 홈페이지 사용에 제한됩니다.</td>
+        </tr>
+        <tr>
+            <th>*</th>
+            <th>비밀번호 확인</th>
+            <td><input type="text" name="pwck"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>*</th>
+            <th>이름</th>
+            <td><input type="text" name="name"></td>
+            <td><input type="button" value="여"></td>
+            <td><input type="button" value="남"></td>
+        </tr>
+        <tr>
+            <th>*</th>
+            <th>주소</th>
+            <td><input type="text" name="adr"></td>
+            <td><input type="button" value="우편번호찾기"></td>
+        </tr>
+        <tr>
+        <td><input type="text" name="adr1"></td>
+        <td><input type="text" name="adr2"></td>
+        </tr>
+        <tr>
+            <th>*</th>
+            <th>이메일</th>
+            <td><input type="text" name="email1">@</td>
+            <td><input type="text" name="email2"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>*</th>
+            <th>휴대폰번호</th>
+            <td><input type="tel" name="tel1">-</td>
+            <td><input type="tel" name="tel2">-</td>
+            <td><input type="tel" name="tel3"></td>
+            <td></td>
+        </tr>
+ 
+ 
+        
+ 
+    </table>
+</body>
+</html>
+

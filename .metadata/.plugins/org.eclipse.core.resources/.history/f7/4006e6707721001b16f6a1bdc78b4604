@@ -1,0 +1,54 @@
+package quiz;
+
+import java.util.Random;
+import java.util.Scanner;
+
+public class QuRockPaperScissors {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		Random rd = new Random();
+		int comNum = (rd.nextInt(3)+1);
+
+		
+		System.out.print("무엇을 내시겠습니까? "
+				+ "(1:가위, 2:바위, 3:보 : ");
+		int user = sc.nextInt();
+		
+		if(user==1) {
+			System.out.print("사용자: 가위, ");
+			if(comNum==1) {
+				System.out.println("컴퓨터: 가위");
+			}
+			else if(comNum==2) {
+				System.out.println("컴퓨터: 바위");
+			}
+			else if(comNum==3)
+				System.out.println("컴퓨터: 보");
+		}
+		else if(user==2) {
+			System.out.print("사용자: 바위, ");
+			if(comNum==1) {
+				System.out.println("컴퓨터: 가위");
+			}
+			else if(comNum==2) {
+				System.out.println("컴퓨터: 바위");
+			}
+			else if(comNum==3)
+				System.out.println("컴퓨터: 보");
+		}
+		else if(user==3) {
+			System.out.print("사용자: 보, ");
+			if(comNum==1) {
+				System.out.println("컴퓨터: 가위");
+			}
+			else if(comNum==2) {
+				System.out.println("컴퓨터: 바위");
+			}
+			else if(comNum==3)
+				System.out.println("컴퓨터: 보");
+		}
+
+}
+}

@@ -1,0 +1,23 @@
+package quiz;
+
+public class BubbleSort {
+	
+	private static void swap() {
+
+		
+		int[] arr = new int[10];//크기가 10인 배열 생성
+		
+		for(int i=0; i<arr.length; i++) {
+				int num = (int)(Math.random()*100)+1;
+				arr[i] = num;
+				System.out.print(arr[i]+"");
+		}
+
+	}
+	public static void main(String[] args) {
+		
+		
+		swap();
+		
+	}
+}
